@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+body {
+    background-color: #293242;
+    font-family: 'Manrope' sans-serif;
+    font-weight: 800;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+.bloco {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #57647a;
+    border-radius: 10px;
+    margin: 20px;
+    width: 345px;
+}
+
+.advice-number {
+    color: #52ffa8;
+    letter-spacing: 6px;
+    font-size: 15px;
+    margin-top: 30px;
+}
+
+.advice {
+    padding: 25px;
+    font-size: 20px;
+    text-align: center;
+    color: #cee3e9;
+}
+
+#risco {
+    width: 345px;
+}
+
+#atualizar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: #cee3e9;
+    transform: translateY(50%);
+}
+
+#atualizar:hover {
+    color: #52ffa8;
+    box-shadow: 0 2px 10px #52ffa8;
+}
+

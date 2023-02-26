@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf8">
+    <head>
+        <link href="estilo.css" rel="stylesheet">
+        <title>Dicionário de dados</title>
+    </head>
+    <body>
+    <div id="interface">
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html"></a>INICIO</li>
+                <li><a href="pw1.html">PW I</a></li>
+                <li><a href="DD.html">Design Digital</a></li>
+                <li><a href="bd.html">Banco de Dados</a></li>
+                <li><a href="INGLES.html">Inglês</a></li>
+                <li><a href="PA.html">Programação</a></li>
+                <li><a href="ECO.html">Ética</a></li>
+                <li><a href="FI.html">FI</a></li>
+                <li><a href="OSA.html">OSA</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <center>
+        <h1>Banco de dados</h1>
+        </center>
+        <h2>Glossário</h2>
+<p><b>Atributo</b> - Um atributo de banco de dados é uma característica de uma entidade de banco de dados. Um atributo é uma coluna em uma tabela de banco de dados, que é conhecida como uma entidade.</p>
+
+<p><b>Autenticação</b> - Os bancos de dados usam autenticação para garantir que apenas usuários autorizados possam acessar o banco de dados ou certos aspectos do banco de dados. Por exemplo, os administradores podem ser autorizados a inserir ou editar dados, enquanto os funcionários regulares podem ser capazes de apenas visualizar os dados. A autenticação é implementada com nomes de usuário e senhas.</p>
+
+<p><b>Entidade</b> - Uma entidade é uma tabela em um banco de dados. É descrito por meio de um Diagrama de Entidade-Relacionamento, que é um tipo de gráfico que mostra as relações entre as tabelas do banco de dados.</p>
+
+<p><b>Chave</b> - Uma chave é um campo de banco de dados cujo objetivo é identificar exclusivamente um registro. As chaves ajudam a reforçar a integridade dos dados e evitar a duplicação. Os principais tipos de chaves usadas em um banco de dados são:</p>
+
+<ul>
+    <li><b>Chaves do candidato:</b> O conjunto de colunas que podem identificar exclusivamente um registro e a partir do qual a chave primária é escolhida.</li>
+    <li><b>Chaves primárias:</b> Esta chave identifica exclusivamente um registro em uma tabela. Não pode ser nulo.</li>
+    <li><b>Chaves estrangeiras:</b> A chave que liga um registro a um registro em outra tabela. A chave estrangeira de uma tabela deve existir como a chave primária de outra tabela.</li>
+</ul>
+
+<p><b>NoSQL</b> - NoSQL é um modelo de banco de dados desenvolvido para responder à necessidade de armazenamento de dados não estruturados, como e-mails, postagens em mídias sociais, vídeos ou imagens. Em vez de usar SQL e o modelo ACID estrito para garantir a integridade dos dados, o NoSQL segue o modelo BASE menos estrito. Um esquema de banco de dados NoSQL não usa tabelas para armazenar dados; em vez disso, ele pode usar um design de chave / valor ou gráficos.</p>
+
+<p><b>Esquema</b> - Um esquema de banco de dados é o design de tabelas, colunas, relações e restrições que constituem uma seção logicamente distinta de um banco de dados.</p>
+
+<p><b>Linguagem de consulta estruturada</b> - Structured Query Language, ou SQL, é a linguagem mais comumente usada para acessar dados de um banco de dados. O SQL se ramifica em dois tipos de sintaxe. O Linguagem de manipulação de dados contém o subconjunto de comandos SQL usados ​​com mais freqüência e inclui SELECT, INSERT, UPDATE e DELETE. O Linguagem de definição de dados cria novos objetos de banco de dados, como índices e tabelas.</p>
+<br>
+<hr>
+<center>
+    <footer><h3>Thiago Picioli&copy</h3></footer>
+</center>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript">
+var scrolltotop={setting:{startline:100,scrollto:0,scrollduration:1e3,fadeduration:[500,100]},controlHTML:'<img src="https://lh3.googleusercontent.com/pw/AM-JKLUhYbTqoePb40za7_829tMxPMNg2boUefPb1cKzX91sIGEUpemeQcU3nF0ETWQ-YqHzkpYlAPI7rs30Gd3-NxITRpWdjQCX6iboxbWFaG3_94b5VZ_KRkkI1dpw9caDHqu5BtZlnTj14CP3swv6HLU=s50-no" />',controlattrs:{offsetx:5,offsety:5},anchorkeyword:"#top",state:{isvisible:!1,shouldvisible:!1},scrollup:function(){this.cssfixedsupport||this.$control.css({opacity:0});var t=isNaN(this.setting.scrollto)?this.setting.scrollto:parseInt(this.setting.scrollto);t="string"==typeof t&&1==jQuery("#"+t).length?jQuery("#"+t).offset().top:0,this.$body.animate({scrollTop:t},this.setting.scrollduration)},keepfixed:function(){var t=jQuery(window),o=t.scrollLeft()+t.width()-this.$control.width()-this.controlattrs.offsetx,s=t.scrollTop()+t.height()-this.$control.height()-this.controlattrs.offsety;this.$control.css({left:o+"px",top:s+"px"})},togglecontrol:function(){var t=jQuery(window).scrollTop();this.cssfixedsupport||this.keepfixed(),this.state.shouldvisible=t>=this.setting.startline?!0:!1,this.state.shouldvisible&&!this.state.isvisible?(this.$control.stop().animate({opacity:1},this.setting.fadeduration[0]),this.state.isvisible=!0):0==this.state.shouldvisible&&this.state.isvisible&&(this.$control.stop().animate({opacity:0},this.setting.fadeduration[1]),this.state.isvisible=!1)},init:function(){jQuery(document).ready(function(t){var o=scrolltotop,s=document.all;o.cssfixedsupport=!s||s&&"CSS1Compat"==document.compatMode&&window.XMLHttpRequest,o.$body=t(window.opera?"CSS1Compat"==document.compatMode?"html":"body":"html,body"),o.$control=t('<div id="topcontrol">'+o.controlHTML+"</div>").css({position:o.cssfixedsupport?"fixed":"absolute",bottom:o.controlattrs.offsety,right:o.controlattrs.offsetx,opacity:0,cursor:"pointer"}).attr({title:"Scroll to Top"}).click(function(){return o.scrollup(),!1}).appendTo("body"),document.all&&!window.XMLHttpRequest&&""!=o.$control.text()&&o.$control.css({width:o.$control.width()}),o.togglecontrol(),t('a[href="'+o.anchorkeyword+'"]').click(function(){return o.scrollup(),!1}),t(window).bind("scroll resize",function(t){o.togglecontrol()})})}};scrolltotop.init();</script>
+<noscript>Not seeing a <a href="https://www.scrolltotop.com/">Scroll to Top Button</a>? Go to our FAQ page for more info.</noscript> 
+</div> 
+    </body>
+</html>
